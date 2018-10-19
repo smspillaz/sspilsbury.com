@@ -139,9 +139,9 @@ config.plugins.push.apply(config.plugins, [
   }),
 
   new WebpackPwaManifest({
-    name: 'React Boilerplate',
-    short_name: 'React BP',
-    description: 'My React Boilerplate-based project!',
+    name: 'Sam Spilsbury',
+    short_name: 'sspilsbury',
+    description: 'Portfolio of Sam Spilsbury',
     background_color: '#fafafa',
     theme_color: '#b1624d',
     icons: [
