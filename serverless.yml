@@ -1,4 +1,4 @@
-service: react-boilerplate-app
+service: sspilsbury-com
 provider:
   name: aws
   runtime: nodejs6.10
