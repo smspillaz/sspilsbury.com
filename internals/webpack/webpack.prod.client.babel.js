@@ -27,7 +27,7 @@ const config = require('./webpack.prod.babel')({
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        test: /^(.*(?!emscripten).*)js[x]$/,
+        exclude: /.*emscripten.*/,
         terserOptions: {
           warnings: false,
           compress: {
