@@ -47,6 +47,10 @@ module.exports = options => ({
         use: 'file-loader',
       },
       {
+        test: /\.mem$/,
+        use: 'file-loader',
+      },
+      {
         test: /\.svg$/,
         use: [
           {
