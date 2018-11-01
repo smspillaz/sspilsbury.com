@@ -23,7 +23,7 @@ module.exports = options => ({
     rules: [
       {
         test: /\.js[x]?$/, // Transform all .js files required somewhere with Babel
-        exclude: /node_modules/,
+        exclude: /(node_modules|.*experiments\/emscripten.*)/,
         use: {
           loader: 'babel-loader',
         },
