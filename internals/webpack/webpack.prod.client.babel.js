@@ -40,6 +40,7 @@ const config = require('./webpack.prod.babel')({
           },
         },
         sourceMap: true,
+        chunkFilter: c => c.name !== 'emscripten',
       }),
     ],
     nodeEnv: 'production',
@@ -63,6 +64,17 @@ const config = require('./webpack.prod.babel')({
             )[1];
             return `npm.${packageName.replace('@', '')}`;
           },
+        },
+        emscripten: {
+          test: /.*emscripten.*/,
+          name: 'emscripten',
+          chunks: 'all',
+        },
+        main: {
+          chunks: 'all',
+          minChunks: 2,
+          reuseExistingChunk: true,
+          enforce: true,
         },
       },
     },
