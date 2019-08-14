@@ -6,6 +6,7 @@ module.exports = {
     '!app/app.js',
     '!app/global-styles.js',
     '!app/*/*/Loadable.{js,jsx}',
+    '!app/experiments/emscripten/*',
   ],
   globals: {
     __SERVER__: false,
