@@ -148,6 +148,10 @@ config.plugins.push.apply(config.plugins, [
   new ReactLoadablePlugin({
     filename: './build/react-loadable.json',
   }),
+
+  new webpack.EnvironmentPlugin({
+    API_HOST: 'https://api.sspilsbury.com',
+  }),
 ]);
 
 module.exports = config;
