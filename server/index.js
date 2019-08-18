@@ -1,4 +1,6 @@
 /* eslint consistent-return:0 import/order:0 */
+const cors = require('cors');
+
 const app = require('./server');
 const argv = require('./argv');
 const port = require('./port');
@@ -14,6 +16,9 @@ const ngrok =
 const customHost = argv.host || process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
+
+// use cors
+app.use(cors());
 
 // Start your app.
 app.listen(port, host, async err => {
