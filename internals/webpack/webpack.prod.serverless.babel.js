@@ -1,6 +1,7 @@
 // Important modules this config uses
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const webpack = require('webpack');
 
 module.exports = require('./webpack.prod.babel')({
   // In production, we skip all hot-reloading stuff
@@ -16,6 +17,12 @@ module.exports = require('./webpack.prod.babel')({
     // correctly from lambda
     path: path.join(process.cwd()),
   },
+
+  plugins: [
+    new webpack.EnvironmentPlugin({
+      SERVERLESS: '1',
+    }),
+  ],
 
   target: 'node',
   server: true,
