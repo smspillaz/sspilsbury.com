@@ -114,6 +114,7 @@
     "sanitize.css": "11.0.0",
     "serverless-http": "^1.5.2",
     "styled-components": "4.4.0",
+    "styled-system": "5.1.5",
     "three": "^0.97.0",
     "uid": "0.0.2",
     "warning": "4.0.2",
