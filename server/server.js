@@ -11,8 +11,8 @@ app.use('/api', serverApi);
 
 // In production we need to pass these values in instead of relying on webpack
 if (process.env.SERVERLESS !== '1') {
-  const { resolve } = require('path');
-  const setup = require('./middlewares/frontendMiddleware');
+  const { resolve } = require('path'); // eslint-disable-line global-require
+  const setup = require('./middlewares/frontendMiddleware'); // eslint-disable-line global-require
 
   setup(app, {
     outputPath: resolve(process.cwd(), 'build'),
