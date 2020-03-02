@@ -1,17 +1,240 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> should render and match the snapshot 1`] = `
-<div>
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
+<ForwardRef(App__AppWrapper)>
+  <ThemeProvider
+    theme={
+      Object {
+        "buttons": Object {
+          "outline": Object {
+            "bg": "transparent",
+            "boxShadow": "inset 0 0 2px",
+            "color": "primary",
+            "variant": "buttons.primary",
+          },
+          "primary": Object {
+            "bg": "primary",
+            "borderRadius": "default",
+            "color": "background",
+            "fontSize": 2,
+            "fontWeight": "bold",
+          },
+          "secondary": Object {
+            "bg": "secondary",
+            "color": "background",
+            "variant": "buttons.primary",
+          },
+        },
+        "colors": Object {
+          "background": "#fff",
+          "gray": "#dddddf",
+          "highlight": "hsla(205, 100%, 40%, 0.125)",
+          "muted": "#f6f6f9",
+          "primary": "#07c",
+          "secondary": "#30c",
+          "text": "#000",
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+          96,
+        ],
+        "fontWeights": Object {
+          "body": 400,
+          "bold": 700,
+          "heading": 700,
+        },
+        "fonts": Object {
+          "body": "system-ui, sans-serif",
+          "heading": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "monospace": "Menlo, monospace",
+        },
+        "lineHeights": Object {
+          "body": 1.5,
+          "heading": 1.25,
+        },
+        "radii": Object {
+          "circle": 99999,
+          "default": 4,
+        },
+        "shadows": Object {
+          "card": "0 0 4px rgba(0, 0, 0, .125)",
+        },
+        "sizes": Object {
+          "avatar": 48,
+        },
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+        ],
+        "styles": Object {
+          "root": Object {
+            "fontFamily": "body",
+            "fontWeight": "body",
+            "lineHeight": "body",
+          },
+        },
+        "text": Object {
+          "caps": Object {
+            "letterSpacing": "0.1em",
+            "textTransform": "uppercase",
+          },
+          "display": Object {
+            "fontFamily": "heading",
+            "fontSize": Array [
+              5,
+              6,
+              7,
+            ],
+            "fontWeight": "heading",
+            "lineHeight": "heading",
+          },
+          "heading": Object {
+            "fontFamily": "heading",
+            "fontWeight": "heading",
+            "lineHeight": "heading",
+          },
+        },
+        "variants": Object {
+          "avatar": Object {
+            "borderRadius": "circle",
+            "height": "avatar",
+            "width": "avatar",
+          },
+          "card": Object {
+            "bg": "background",
+            "boxShadow": "card",
+            "p": 2,
+          },
+          "link": Object {
+            "color": "primary",
+          },
+          "nav": Object {
+            ":hover,:focus,.active": Object {
+              "color": "primary",
+            },
+            "color": "inherit",
+            "display": "inline-block",
+            "fontSize": 1,
+            "fontWeight": "bold",
+            "p": 2,
+            "textDecoration": "none",
+          },
+        },
+      }
+    }
+  >
+    <HelmetWrapper
+      defaultTitle="Sam Spilsbury"
+      defer={true}
+      encodeSpecialCharacters={true}
+      titleTemplate="%s - Sam Spilsbury"
+    >
+      <meta
+        content="Sam Spilsbury's Portfolio"
+        name="description"
+      />
+    </HelmetWrapper>
+    <Navbar
+      items={
+        Array [
+          Object {
+            "name": "Main",
+            "url": "/",
+          },
+          Object {
+            "name": "Posts",
+            "url": "/posts",
+          },
+          Object {
+            "name": "Research",
+            "url": "/research",
+          },
+          Object {
+            "name": "Projects",
+            "url": "/projects",
+          },
+          Object {
+            "name": "Experiments",
+            "url": "/experiments",
+          },
+          Object {
+            "name": "Hire",
+            "url": "/hire",
+          },
+        ]
+      }
     />
-    <Route
-      component={[Function]}
-    />
-  </Switch>
-  <GlobalStyleComponent />
-</div>
+    <UNDEFINED
+      medium={
+        Object {
+          "count": 10,
+          "username": "smspillaz",
+        }
+      }
+      wordpress={
+        Object {
+          "count": 10,
+          "domain": "smspillaz.wordpress.com",
+        }
+      }
+    >
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/contact"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/hire"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/research"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/posts"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/experiments"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/projects"
+        />
+        <Route
+          component={[Function]}
+          path=""
+        />
+      </Switch>
+    </UNDEFINED>
+    <GlobalStyleComponent />
+  </ThemeProvider>
+</ForwardRef(App__AppWrapper)>
 `;
