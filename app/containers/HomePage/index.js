@@ -6,13 +6,106 @@
  */
 
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import PropTypes from 'prop-types';
 
-export default function HomePage() {
+import { Heading, Text } from 'rebass/styled-components';
+import { Hero, Section, ScrollDownIndicator } from 'react-landing-page';
+
+import { ArticleContent } from 'components/ArticleContent';
+import { BackgroundAnimation } from 'components/BackgroundAnimation';
+import LoadingIndicator from 'components/LoadingIndicator';
+import { PostPreview } from 'components/PostPreview';
+import { ProjectPreview } from 'components/ProjectPreview';
+import { ProjectPreviewImageCarousel } from 'components/ProjectPreviewImageCarousel';
+import { LayoutTypes } from 'components/ResponsiveOrderedLayoutChild';
+import { PostPreviews } from 'containers/PostPreviews';
+import messages from './messages';
+import { projects } from '../../content/projects';
+
+export default function HomePage({ animating = true }) {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <article>
+      <Helmet>
+        <title>Sam Spilsbury</title>
+        <meta name="description" content="Sam Spilsbury's Portfolio" />
+      </Helmet>
+      <Hero color="black" bgOpacity={0.0}>
+        <BackgroundAnimation
+          style={{
+            margin: '0 0 0 0',
+            zIndex: 0,
+            width: '100%',
+            height: '100%',
+            position: 'absolute',
+          }}
+          animating={animating}
+        />
+        <ArticleContent style={{ textAlign: 'center' }}>
+          <Heading fontSize={[5, 6, 7]}>
+            <FormattedMessage {...messages.make} />
+          </Heading>
+          <Heading fontSize={[5, 6, 7]}>
+            <FormattedMessage {...messages.imagination} />
+          </Heading>
+          <Heading fontSize={[5, 6, 7]}>
+            <FormattedMessage {...messages.reality} />
+          </Heading>
+          <ScrollDownIndicator />
+        </ArticleContent>
+      </Hero>
+      <ArticleContent>
+        <Section width={1} heading={messages.posts.defaultMessage}>
+          <PostPreviews.Consumer>
+            {({ loading, error, posts }) => (
+              <div>
+                {loading && <LoadingIndicator />}
+                {error && <Text>{error.msg}</Text>}
+                {!error &&
+                  posts
+                    .slice(0, 5)
+                    .map(post => (
+                      <PostPreview
+                        title={post.title}
+                        subtitle={post.subtitle}
+                        date={post.date}
+                        likes={post.likes}
+                        words={post.words}
+                        url={post.url}
+                        key={post.url}
+                      />
+                    ))}
+              </div>
+            )}
+          </PostPreviews.Consumer>
+        </Section>
+        <Section width={1} heading={messages.projects.defaultMessage}>
+          {projects
+            .filter(({ featured }) => featured)
+            .map((project, i) => (
+              <ProjectPreview
+                header={project.title}
+                subtitle={project.subtitle}
+                client={project.client}
+                description={project.short}
+                layout={i % 2 === 0 ? LayoutTypes.LEFT : LayoutTypes.RIGHT}
+                url={project.url}
+                key={project.key}
+                renderContractedPreview={() => (
+                  <ProjectPreviewImageCarousel
+                    images={project.images}
+                    imageStyleProps={project.imageStyleProps || {}}
+                  />
+                )}
+              />
+            ))}
+        </Section>
+      </ArticleContent>
+    </article>
   );
 }
+
+HomePage.propTypes = {
+  animating: PropTypes.bool,
+};

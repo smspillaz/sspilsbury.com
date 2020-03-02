@@ -1,9 +1,308 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HomePage /> should render and match the snapshot 1`] = `
-<h1>
-  <span>
-    This is the HomePage container!
-  </span>
-</h1>
+<article>
+  <div
+    class="sc-cJSrbW dLwzxs sc-ksYbfQ hQmkLk"
+  >
+    <div
+      class="sc-cJSrbW gDgscr sc-hmzhuo heFgru"
+      style="opacity: 1; height: 100%;"
+    />
+    <div
+      class="sc-htpNat kjEEUt sc-bxivhb kPjOIj"
+      style="min-height: 100vh;"
+    >
+      <div
+        style="margin: 0px 0px 0px 0px; z-index: 0; width: 100%; height: 100%; position: absolute;"
+      >
+        <div
+          class="AnimatedCanvas__SizeTrackingContainer-sc-1fa2asd-0 hPyter"
+          style="margin: 0px 0px 0px 0px; z-index: 0; width: 100%; height: 100%; position: absolute;"
+        >
+          <canvas
+            height="0"
+            style="margin: 0px 0px 0px 0px; z-index: 0; width: 100%; height: 100%; position: absolute;"
+            width="0"
+          />
+        </div>
+      </div>
+      <div
+        class="ArticleContent-sc-8xf5qw-0 bbqeai"
+        style="text-align: center;"
+      >
+        <h2
+          class="sc-bdVaJa jbjLLb"
+          font-size="5,6,7"
+        >
+          <span>
+            Make
+          </span>
+        </h2>
+        <h2
+          class="sc-bdVaJa jbjLLb"
+          font-size="5,6,7"
+        >
+          <span>
+            Imagination
+          </span>
+        </h2>
+        <h2
+          class="sc-bdVaJa jbjLLb"
+          font-size="5,6,7"
+        >
+          <span>
+            Reality
+          </span>
+        </h2>
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ArticleContent-sc-8xf5qw-0 bbqeai"
+  >
+    <div
+      class="sc-htpNat bLaVye sc-bxivhb jlzawt"
+    >
+      <h2
+        class="sc-fjdhpX cXJGRi"
+      >
+        Posts
+      </h2>
+      <h3
+        class="sc-fjdhpX gdrLVw sc-jzJRlG enxKql"
+        style="opacity: 0.5;"
+      />
+      <div />
+    </div>
+    <div
+      class="sc-htpNat bLaVye sc-bxivhb jlzawt"
+    >
+      <h2
+        class="sc-fjdhpX cXJGRi"
+      >
+        Projects
+      </h2>
+      <h3
+        class="sc-fjdhpX gdrLVw sc-jzJRlG enxKql"
+        style="opacity: 0.5;"
+      />
+      <div
+        class="sc-bdVaJa sc-bwzfXH ProjectPreview__ResponsiveFlex-sc-1cs94to-0 kecwqy"
+        direction="row"
+        width="1"
+      >
+        <div
+          class="ResponsiveOrderedLayoutChild-sc-9hvmti-0 bWWyfP"
+          style="align-self: flex-begin;"
+          width="1,1,1,0.4"
+        >
+          <div
+            class="ImageRelativeParent-sc-8zyta2-0 knMrFP"
+          >
+            <div>
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-intuimath-intersections.gif); background-size: cover; background-position: center center; border-radius: 8px; transform: scale(0.9); opacity: 1; transition: all 1.5s ease-in-out;"
+              />
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-intuimath-surface-area.gif); background-size: cover; background-position: center center; border-radius: 8px; opacity: 0; filter: blur(16px); transition: all 1.5s ease-in-out;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="ResponsiveOrderedLayoutChild-sc-9hvmti-0 iycRdG"
+          width="1,1,1,0.5"
+        >
+          <a
+            class="Link-sc-1qsuhxf-0 jAEqpf"
+            color="black"
+            href="https://intuitive-math.club"
+          >
+            <h2
+              class="sc-bdVaJa jrtyUD"
+            >
+              Intuitive Math
+            </h2>
+          </a>
+          <h2
+            class="sc-bdVaJa enmavF"
+            color="grey"
+            font-size="1,2,3"
+          >
+            Animated math primer for graphics
+          </h2>
+          <a
+            class="Link-sc-1qsuhxf-0 XoWQB"
+            color="grey"
+            href="https://intuitive-math.club"
+          >
+            <div
+              class="sc-bdVaJa gtVQmG"
+            >
+              intuitive-math.club
+            </div>
+          </a>
+          <div
+            class="MarkdownChildrenStyles-sc-1xr5379-0 eqSurb"
+          >
+            <div
+              class="sc-bdVaJa gtVQmG"
+            >
+              Intuitive Math is a hosted primer for graphics math, primarily linear algebra and calculus.
+It takes its inspiration from 3blue1brown, where it combines worked examples of problems along with their visual intuition at each step in the process.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bdVaJa sc-bwzfXH ProjectPreview__ResponsiveFlex-sc-1cs94to-0 kecwqy"
+        direction="row"
+        width="1"
+      >
+        <div
+          class="ResponsiveOrderedLayoutChild-sc-9hvmti-0 bWWyfP"
+          style="align-self: flex-end;"
+          width="1,1,1,0.4"
+        >
+          <div
+            class="ImageRelativeParent-sc-8zyta2-0 knMrFP"
+          >
+            <div>
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-jurimetrics-cases-over-time.png); background-size: cover; background-position: center center; border-radius: 8px; transform: scale(0.9); opacity: 1; transition: all 1.5s ease-in-out;"
+              />
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-jurimetrics-federal-court-cases.png); background-size: cover; background-position: center center; border-radius: 8px; opacity: 0; filter: blur(16px); transition: all 1.5s ease-in-out;"
+              />
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-jurimetrics-feed.png); background-size: cover; background-position: center center; border-radius: 8px; opacity: 0; filter: blur(16px); transition: all 1.5s ease-in-out;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="ResponsiveOrderedLayoutChild-sc-9hvmti-0 fLLNBd"
+          width="1,1,1,0.5"
+        >
+          <a
+            class="Link-sc-1qsuhxf-0 jAEqpf"
+            color="black"
+            href="https://demo.jurimetrics.com.au"
+          >
+            <h2
+              class="sc-bdVaJa jrtyUD"
+            >
+              Jurimetrics
+            </h2>
+          </a>
+          <h2
+            class="sc-bdVaJa enmavF"
+            color="grey"
+            font-size="1,2,3"
+          >
+            Law and Government in Australia
+          </h2>
+          <a
+            class="Link-sc-1qsuhxf-0 XoWQB"
+            color="grey"
+            href="https://jurimetrics.com.au"
+          >
+            <div
+              class="sc-bdVaJa gtVQmG"
+            >
+              Jurimetrics Pty Ltd
+            </div>
+          </a>
+          <div
+            class="MarkdownChildrenStyles-sc-1xr5379-0 eqSurb"
+          >
+            <div
+              class="sc-bdVaJa gtVQmG"
+            >
+              Jurimetrics is a platform and database compiled from hundreds of thousands of publically available and licensed case reports, prospectii and government registers. See the public legal and regulatory record for almost any company in Australia
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bdVaJa sc-bwzfXH ProjectPreview__ResponsiveFlex-sc-1cs94to-0 kecwqy"
+        direction="row"
+        width="1"
+      >
+        <div
+          class="ResponsiveOrderedLayoutChild-sc-9hvmti-0 bWWyfP"
+          style="align-self: flex-begin;"
+          width="1,1,1,0.4"
+        >
+          <div
+            class="ImageRelativeParent-sc-8zyta2-0 knMrFP"
+          >
+            <div>
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-endless-libanimation-window-animations.gif); background-size: cover; background-position: center center; border-radius: 8px; transform: scale(0.9); opacity: 1; transition: all 1.5s ease-in-out;"
+              />
+              <div
+                class="ImageAbsoluteParent-fqa90c-0 lmjMCH"
+                style="background-image: url(https://s3.amazonaws.com/sspilsbury-com-images/project-endless-libanimation-wobbly-windows.gif); background-size: cover; background-position: center center; border-radius: 8px; opacity: 0; filter: blur(16px); transition: all 1.5s ease-in-out;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="ResponsiveOrderedLayoutChild-sc-9hvmti-0 iycRdG"
+          width="1,1,1,0.5"
+        >
+          <a
+            class="Link-sc-1qsuhxf-0 jAEqpf"
+            color="black"
+            href="https://github.com/smspillaz/libanimation"
+          >
+            <h2
+              class="sc-bdVaJa jrtyUD"
+            >
+              libanimation
+            </h2>
+          </a>
+          <h2
+            class="sc-bdVaJa enmavF"
+            color="grey"
+            font-size="1,2,3"
+          >
+            Math for window animations
+          </h2>
+          <a
+            class="Link-sc-1qsuhxf-0 XoWQB"
+            color="grey"
+            href="https://endlessos.com"
+          >
+            <div
+              class="sc-bdVaJa gtVQmG"
+            >
+              Endless
+            </div>
+          </a>
+          <div
+            class="MarkdownChildrenStyles-sc-1xr5379-0 eqSurb"
+          >
+            <div
+              class="sc-bdVaJa gtVQmG"
+            >
+              libanimation is a math library that can be used by any compositor to provide nice looking window animations. It provides the math for wobbly windows, a magic lamp effect and some simple affine transformations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
 `;
