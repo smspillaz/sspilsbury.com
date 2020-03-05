@@ -3,24 +3,12 @@ const express = require('express');
 const router = express.Router();
 
 const wpcom = require('wpcom')();
-const mediumPosts = require('medium-posts');
 const striptags = require('striptags');
 const Entities = require('html-entities').AllHtmlEntities;
 const entities = new Entities();
 
 const okResponse = payload => ({ status: 'ok', payload });
 const errorResponse = msg => ({ status: 'error', msg });
-
-const parseMediumPost = mediumPost => ({
-  title: mediumPost.title,
-  subtitle: mediumPost.content.subtitle,
-  date: new Date(mediumPost.firstPublishedAt).toISOString(),
-  url: mediumPost.url,
-  image: mediumPost.image,
-  tags: mediumPost.virtuals.tags.map(t => t.name),
-  likes: mediumPost.virtuals.totalClapCount,
-  words: mediumPost.virtuals.wordCount,
-});
 
 const parseWordpressPost = wordpressPost => ({
   title: wordpressPost.title,
@@ -36,17 +24,9 @@ const parseWordpressPost = wordpressPost => ({
 });
 
 router.get('/post-previews', cors(), (req, res) => {
-  const {
-    mediumUsername,
-    mediumCount,
-    wordpressDomain,
-    wordpressCount,
-  } = req.query;
+  const { wordpressDomain, wordpressCount } = req.query;
 
   return Promise.all([
-    mediumPosts
-      .getPosts(mediumUsername, mediumCount)
-      .then(response => response.map(parseMediumPost)),
     wpcom
       .site(wordpressDomain)
       .postsList({ number: wordpressCount })
