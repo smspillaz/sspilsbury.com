@@ -11,7 +11,7 @@ import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 
 import { Heading, Text } from 'rebass/styled-components';
-import { Hero, Section, ScrollDownIndicator } from 'react-landing-page';
+import { Hero, Section } from 'react-landing-page';
 
 import { ArticleContent } from 'components/ArticleContent';
 import { BackgroundAnimation } from 'components/BackgroundAnimation';
@@ -20,6 +20,7 @@ import { PostPreview } from 'components/PostPreview';
 import { ProjectPreview } from 'components/ProjectPreview';
 import { ProjectPreviewImageCarousel } from 'components/ProjectPreviewImageCarousel';
 import { LayoutTypes } from 'components/ResponsiveOrderedLayoutChild';
+import { VisibilityTrackedScrollDownIndicator } from 'components/VisibilityTrackedScrollDownIndicator';
 import { PostPreviews } from 'containers/PostPreviews';
 import messages from './messages';
 import { projects } from '../../content/projects';
@@ -52,7 +53,7 @@ export default function HomePage({ animating = true }) {
           <Heading fontSize={[5, 6, 7]}>
             <FormattedMessage {...messages.reality} />
           </Heading>
-          <ScrollDownIndicator />
+          <VisibilityTrackedScrollDownIndicator />
         </ArticleContent>
       </Hero>
       <ArticleContent>
