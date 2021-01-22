@@ -6,12 +6,13 @@ import { ImageAbsoluteParent } from 'components/ImageAbsoluteParent';
 export const CrossBlurFadeBackgroundImage = ({
   selected,
   url,
+  visible = true,
   styleProps = {},
 }) => (
   <ImageAbsoluteParent
     key={url}
     style={{
-      backgroundImage: ['url(', url, ')'].join(''),
+      backgroundImage: visible ? ['url(', url, ')'].join('') : '',
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       borderRadius: '8px',
@@ -27,5 +28,6 @@ export const CrossBlurFadeBackgroundImage = ({
 CrossBlurFadeBackgroundImage.propTypes = {
   selected: PropTypes.bool.isRequired,
   url: PropTypes.string.isRequired,
+  visible: PropTypes.bool,
   styleProps: PropTypes.object,
 };
