@@ -44,7 +44,7 @@ export class TimeoutPager extends React.Component {
     }));
 
   render() {
-    return this.props.render({ index: this.state.index });
+    return this.props.render({ index: this.state.index, visible: this.props.visible });
   }
 }
 
@@ -53,14 +53,16 @@ TimeoutPager.propTypes = {
   range: PropTypes.number.isRequired,
   render: PropTypes.func.isRequired,
   running: PropTypes.bool,
+  visible: PropTypes.bool,
 };
 
 TimeoutPager.defaultProps = {
   running: false,
+  visible: true,
 };
 
 export const VisibilityTrackingTimeoutPager = props => (
   <TrackVisibility partialVisibility>
-    {({ isVisible }) => <TimeoutPager running={isVisible} {...props} />}
+    {({ isVisible }) => <TimeoutPager running={isVisible} visible={isVisible} {...props} />}
   </TrackVisibility>
 );
