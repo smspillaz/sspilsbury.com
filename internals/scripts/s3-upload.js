@@ -11,8 +11,7 @@ const argv =
     .demandOption('config').argv;
 const s3UploadConfig = JSON.parse(fs.readFileSync(argv.config));
 
-// Copy build files to static
-shell.cp('-R', 'build', path.join(s3UploadConfig.source, 'static'));
+shell.cp('-R', 'build/*', s3UploadConfig.source);
 
 process.env.AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID || s3UploadConfig.accessKeyId;
 process.env.AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY || s3UploadConfig.secretAccessKey;
