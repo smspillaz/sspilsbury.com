@@ -27,7 +27,8 @@ s3Controller.listObjects({
       .filter(k =>
         k.endsWith('.js') ||
         k.endsWith('.gz') ||
-        k.endsWith('.json)')
+        k.endsWith('.json') ||
+        k.endsWith('.html')
       )
       .map(k => s3Controller.deleteObject({
         Bucket: s3UploadConfig.bucket,
